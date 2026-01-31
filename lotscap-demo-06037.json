@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "schema_version": "0.1.0",
+    "generated_at": "2026-01-31T06:51:58Z",
+    "source": "LotsCap Dummy Data"
+  },
+  "region": {
+    "region_id": "06037",
+    "name_en": "Los Angeles County, CA",
+    "name_zh": "洛杉磯郡",
+    "year": 2024
+  },
+  "population": {
+    "total": 10012345,
+    "net_change": 141,
+    "net_change_pct": 1.4082615011767972e-05,
+    "births": 62000,
+    "deaths": 58000,
+    "net_migration": -259,
+    "yoy": {
+      "total_change": 25600,
+      "total_change_pct": 0.00256
+    }
+  },
+  "economy": {
+    "unemployment_rate": 0.047,
+    "median_household_income": 71250,
+    "job_growth_yoy": 0.012
+  },
+  "housing": {
+    "median_home_price": 425000,
+    "median_rent": 1850,
+    "vacancy_rate": 0.061,
+    "permits_ytd": 3450
+  }
+}
