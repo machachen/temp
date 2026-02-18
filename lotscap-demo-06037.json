@@ -289,6 +289,52 @@
         }
       },
       "notes": "Dummy decomposition (per 1,000 population). Use data-area to pick county/state/usa in the chart."
-    }
+    },
+      "household_composition_sankey": {
+        "title": "Household composition (dummy)",
+        "type": "sankey",
+        "unit": "M",
+        "valueDigits": 1,
+        "nodeWidth": 10,
+        "nodeGap": 14,
+        "curveness": 0.5,
+        "nodes": [
+          { "name": "total", "text": "total\nhouseholds", "value": 134, "color": "#0B2E59" },
+      
+          { "name": "couples", "text": "couples\n(married/partnered)", "value": 72, "color": "#8DA0B8" },
+          { "name": "couples_no_children", "text": "couples living\nwithout children", "value": 46, "color": "#8EC5FF" },
+          { "name": "couples_with_children", "text": "couples living\nwith children", "value": 26, "color": "#56C9C0" },
+          { "name": "couples_1_child", "text": "couples living\nwith 1 child", "value": 11, "color": "#0F6B3F" },
+          { "name": "couples_2_children", "text": "couples living\nwith 2 children", "value": 10, "color": "#22A06B" },
+          { "name": "couples_3_children", "text": "couples living\nwith 3 children", "value": 3.5, "color": "#4AD6A8" },
+          { "name": "couples_4p_children", "text": "couples living\nwith 4+ children", "value": 1.5, "color": "#B7E4B2" },
+      
+          { "name": "single", "text": "single adult(s)", "value": 62, "color": "#7E57C2" },
+          { "name": "single_with_children", "text": "adults living alone\nwith 1+ children", "value": 8, "color": "#CBE6A8" },
+          { "name": "single_without_children_partner", "text": "adult(s) living without\nchildren or spouse/partner", "value": 54, "color": "#B39DDB" },
+          { "name": "living_alone", "text": "adults living\nalone", "value": 39, "color": "#B87373" },
+          { "name": "roommates", "text": "adults living with\nroommates (no children)", "value": 15, "color": "#E6A48E" }
+        ],
+        "links": [
+          { "source": "total", "target": "couples", "value": 72 },
+          { "source": "total", "target": "single", "value": 62 },
+      
+          { "source": "couples", "target": "couples_no_children", "value": 46 },
+          { "source": "couples", "target": "couples_with_children", "value": 26 },
+      
+          { "source": "couples_with_children", "target": "couples_1_child", "value": 11 },
+          { "source": "couples_with_children", "target": "couples_2_children", "value": 10 },
+          { "source": "couples_with_children", "target": "couples_3_children", "value": 3.5 },
+          { "source": "couples_with_children", "target": "couples_4p_children", "value": 1.5 },
+      
+          { "source": "single", "target": "single_with_children", "value": 8 },
+          { "source": "single", "target": "single_without_children_partner", "value": 54 },
+      
+          { "source": "single_without_children_partner", "target": "living_alone", "value": 39 },
+          { "source": "single_without_children_partner", "target": "roommates", "value": 15 }
+        ],
+        "notes": "Dummy values in millions. Replace with your real household composition."
+      }
+    
   }
 }
