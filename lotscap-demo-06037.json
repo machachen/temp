@@ -307,7 +307,7 @@
         "nodeWidth": 10,
         "nodeGap": 14,
         "curveness": 0.5
-      }
+      },
 
       "household_composition_sankey2": {
         "title": "Household composition (dummy)",
