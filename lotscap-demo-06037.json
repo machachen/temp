@@ -290,7 +290,26 @@
       },
       "notes": "Dummy decomposition (per 1,000 population). Use data-area to pick county/state/usa in the chart."
     },
+
       "household_composition_sankey": {
+        "title": "Household composition",
+        "type": "sankey",
+        "values": {
+          "households": 129227496,
+          "partnered": 69925789,
+          "partnered_with_children": 26197947,
+          "partnered_no_children": 43727842,
+          "single": 59301707,
+          "single_with_children": 7857475,
+          "single_living_alone": 37140836,
+          "single_living_with_others": 14303396
+        },
+        "nodeWidth": 10,
+        "nodeGap": 14,
+        "curveness": 0.5
+      }
+
+      "household_composition_sankey2": {
         "title": "Household composition (dummy)",
         "type": "sankey",
         "unit": "M",
